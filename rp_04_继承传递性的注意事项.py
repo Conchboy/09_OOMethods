@@ -35,6 +35,10 @@ class XiaoTianQuan(Dog):
     def fly(self):
         print("傻了吧, 爷可以飞")
 
+class Cat:
+
+    def catch_mouse(self):
+        print("抓老鼠, 哇咔咔")
 
 # 创建对象
 wangcai = Dog()
@@ -48,6 +52,8 @@ wangcai.sleep()
 wangcai.bark()
 xtq.fly()
 xtq.bark()
+# 不能调用不在直线父类中的方法
+# xtq.catch_mouse()
 
 
 

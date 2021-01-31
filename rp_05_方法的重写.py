@@ -34,21 +34,11 @@ class XiaoTianQuan(Dog):
 
     def fly(self):
         print("傻了吧, 爷可以飞")
+    # 如果在子类中, 重写了父类中定义的方法
+    # 在使用子类对象调用的方法, 就会使用子类中重写的方法
+    def bark(self):
+        print("嘤嘤嘤")
 
 
-# 创建对象
-wangcai = Dog()
 xtq = XiaoTianQuan()
-
-
-xtq.eat()
-wangcai.drink()
-wangcai.run()
-wangcai.sleep()
-wangcai.bark()
-xtq.fly()
 xtq.bark()
-
-
-
-
