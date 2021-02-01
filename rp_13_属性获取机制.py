@@ -5,11 +5,16 @@ class Tool(object):
     list = []
 
     def __init__(self, name):
+        """
+
+        :type name: object
+        """
         self.name = name
 
         # 让属性的值+1; 记录和类相关的特征
         Tool.count += 1
-        list.append(name)
+        # Tool.list += name
+        Tool.list.append(name)
 
 
 # 1. 创建工具对象
