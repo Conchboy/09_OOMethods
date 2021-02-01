@@ -24,5 +24,7 @@ tool3 = Tool("水桶")
 tool4 = Tool("类属性")
 
 # 2. 输出工具对象的总数. 建议使用类名访问类属性
-print("工具对象总数 %d" % tool1.count)
-print(Tool.list)
+# 使用对象名访问修改类属性的值, 只是修改了该实例属性, 不影响类属性的值
+tool3.count = 90
+print("工具对象总数 %d" % tool3.count)
+print("====> %d" % Tool.count)
